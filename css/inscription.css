@@ -1,0 +1,451 @@
+@import "../style.css";
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url("../src/img/assets/Triangle_pattern_007.jpg");
+    background-repeat: no-repeat;
+    animation-name: back;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    height: 600px;
+
+}
+
+
+
+#logo {
+    width: 300px;
+    margin: 0 auto;
+
+}
+
+
+
+body main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+@keyframes back {
+    0% {
+        filter: hue-rotate(340deg);
+        filter: brightness(95%);
+        filter: contrast(1);
+        filter: grayscale(0%);
+        filter: invert(0);
+    }
+
+    50% {
+
+        filter: hue-rotate(380deg);
+        filter: brightness(80%);
+        filter: contrast(0.85);
+        filter: grayscale(90%);
+        filter: invert(0.1);
+
+
+    }
+
+    100% {
+        filter: hue-rotate(340deg);
+        filter: brightness(95%);
+        filter: contrast(1);
+        filter: grayscale(0%);
+        filter: invert(0);
+    }
+
+}
+
+.flag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-image: url("../src/img/assets/banniere.svg");*/
+    background-color: #00000062;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    width: 80%;
+    height: 25rem;
+
+}
+
+.first_name {
+    margin-bottom: 10px;
+}
+
+.text {
+    margin-top: 10px;
+}
+
+.sex_choice {
+    display: flex;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.man_choice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.woman_choice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 30px;
+
+}
+
+.username {
+    width: 50px;
+    margin-right: 30px;
+}
+
+.username input {
+    width: 80px;
+    padding-left: 5px;
+}
+
+.name-first_name input {
+    width: 80px;
+    padding-left: 5px;
+
+}
+
+.login {
+    display: flex;
+    margin-top: 10px;
+    gap: 30px;
+}
+
+.password {
+    width: 50px;
+    margin-right: 30px;
+}
+
+.password input {
+    padding-left: 5px;
+    width: 80px;
+}
+
+.mail {
+    width: 50px;
+    margin-right: 30px;
+}
+
+.mail input {
+    padding-left: 5px;
+    width: 80px;
+
+
+}
+
+.informations {
+    display: flex;
+    margin-top: 10px;
+    gap: 30px;
+}
+
+.birthday {
+    width: 50px;
+    margin-right: 30px;
+}
+
+.birthday input {
+    padding-left: 5px;
+    width: 80px;
+    font-size: 8px;
+}
+
+.city {
+    width: 50px;
+    margin-right: 30px;
+}
+
+.city input {
+    padding-left: 5px;
+    width: 80px;
+
+
+
+}
+
+.input {
+    background-color: rgba(252, 251, 251, 0.7);
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+}
+
+.input::placeholder {
+    color: #000000;
+}
+
+.div_button {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+.button {
+    height: 50px;
+    width: 100px;
+    border-radius: 3px;
+    border: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ---------- ordinateur --------------*/
+
+@media screen and (min-width: 1024px) {
+
+    body {
+        background-image: url("../src/img/assets/Triangle-ordinateur.jpg");
+
+        animation-name: back;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+
+
+    #logo {
+        width: 325px;
+        padding: 20px;
+        height: 200px;
+    }
+
+
+
+    .flag {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /*background-image: url("../src/img/assets/banniere-desktop.svg");*/
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+        height: 26rem;
+    }
+
+
+
+    .sex_choice {
+        gap: 100px;
+    }
+
+    .profil {
+        gap: 200px;
+    }
+
+    .login {
+        gap: 200px;
+        margin-right: 50px;
+
+
+    }
+
+    .informations {
+        gap: 200px;
+        margin-right: 50px;
+    }
+
+    .input {
+        height: 45px;
+        background-color: rgba(252, 251, 251, 0.7);
+        border-radius: 5px;
+        border: none;
+
+
+
+    }
+
+    .first_name {
+        margin-bottom: 20px;
+    }
+
+    .first_name input {
+        width: 150px;
+    }
+
+    .name input {
+        width: 150px;
+    }
+
+    .mail input {
+        width: 150px;
+    }
+
+    .password input {
+        width: 150px;
+    }
+
+    .username input {
+        width: 150px;
+    }
+
+    .city input {
+        width: 150px;
+    }
+
+    .birthday input {
+        width: 150px;
+        font-size: 15px;
+    }
+
+    .div_button {
+        margin-top: 85px;
+    }
+
+}
+
+/* ---------- petit telephone --------------*/
+
+@media screen and (max-width: 780px) {
+    #logo {
+        padding: 20px 0;
+        width: 200px;
+    }
+
+
+}
+
+
+/* ---------- grand telephone --------------*/
+
+@media screen and (min-height: 780px) and (max-height : 1000px) and (max-width : 450px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 25% auto;
+
+    }
+}
+
+/* ---------- Ipad --------------*/
+
+@media screen and (min-width: 767px) and (max-width: 1000px) and (min-height : 900px) {
+
+    body {
+        background-image: url("../src/img/assets/Triangle-tablette.jpg");
+    }
+
+    #logo {
+        width: 500px;
+        padding: 50px;
+    }
+
+    body {
+
+        height: 1024px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .flag {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /*background-image: url("../src/img/assets/banniere-desktop.svg");*/
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+        height: 28rem;
+        margin: 20px;
+    }
+
+    .button {
+        height: 75px;
+        width: 150px;
+    }
+
+    .sex_choice {
+        gap: 100px;
+    }
+
+    .profil {
+        gap: 125px;
+    }
+
+    .login {
+        gap: 125px;
+    }
+
+    .informations {
+        gap: 125px;
+    }
+
+    .div_button {
+        margin-top: 125px;
+    }
+
+    .input {
+        height: 30px;
+    }
+}
+
+/*---------------- Tablette -------------------*/
+
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+    body {
+        background-image: url("../src/img/assets/Triangle-tablette.jpg");
+    }
+
+    .sex_choice {
+        gap: 100px;
+    }
+
+    .profil {
+        gap: 125px;
+    }
+
+    .login {
+        gap: 125px;
+    }
+
+    .informations {
+        gap: 125px;
+    }
+
+    .input {
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .flag {
+        height: 28rem;
+    }
+}

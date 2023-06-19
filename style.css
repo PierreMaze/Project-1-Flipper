@@ -1,0 +1,15 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+/* Import CSS files */
+
+@import "./css/variables.css";
+@import "./css/reset.css";
+@import "./css/header.css";
+@import "./css/body.css";
+@import "./css/footer.css";
+@import "./css/hamburger_overwrite.css";
+@import "./css/sidebar.css";
+@import "./css/buttons.css";
+@import "./css/flippers.css";
+

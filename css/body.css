@@ -1,0 +1,17 @@
+body {
+    line-height: 1.8;
+    font-family: var(--primary-font-family);
+    font-size: var(--font-size);
+
+    background-color: var(--light);
+    overflow-y: initial;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 100%;
+    padding: 64px 0px 64px 0px;
+}

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.barResearch {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light);
+    top: 64px;
+    height: 40px;
+    width: 100%;
+}
+
+#myResearch {
+    margin: 0.5em 1em;
+    border-radius: 15em;
+    text-align: center;
+    width: 100%;
+}
+
+.card__bar {
+    height: 1px;
+    width: 80%;
+    background-color: var(--light);
+    margin: 0 auto;
+    box-shadow: 0px 1px 1px 0px var(--darken);
+}
+
+/*All Status Private Message*/
+.statusMsg {
+    display: flex;
+    flex-direction: row;
+}
+
+/*Picture*/
+.pictureStatusMsg {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    margin: 1em;
+    border-radius: 50%;
+}
+
+/*<h6> & <p> in on satus*/
+.allStatusMsg {
+    display: block;
+    flex-direction: column;
+    padding: 0 1em;
+    width: 100%;
+}
+
+.nameProfil {
+    padding-top: 1em;
+}
+
+/*Text Message "LOREM"*/
+.textMsg {
+    font-size: 1em;
+    padding: 0 0 1em 0;
+    width: 95%;
+}
+
+/*Animation Block Private Message Phone*/
+@media screen and (max-width: 375px) {
+    .textMsg:active {
+        background-color: var(--primary-color);
+        color: var(--white);
+    }
+    
+    .statusMsg:active {
+        background-color: var(--primary-color);
+        color: var(--white);
+        border-radius: 15px;
+    }
+    
+    .allStatusMsg:active {
+        background-color: var(--primary-color);
+        color: var(--white);
+        border-radius: 15px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    /* .main-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        padding: 10px 16px 64px 16px;
+    } */
+
+    form {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        }
+
+    .barResearch {
+        text-decoration: none;
+        display: none;
+    }
+
+    .myResearch {
+        margin: 0.5em 2em;
+        border-radius: 15em;
+        text-align: center;
+        width: 100%;
+    }  
+    
+    .pictureStatusMsg {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        margin: 1em;
+    }
+
+    /* Animation Block Private Message Desktop*/
+    .statusMsg {
+        display: flex;
+        flex-direction: row;
+        padding: 0 1em;
+        margin:  0 4.5em 0 0;
+        border-radius: 15px;
+        z-index: 0;
+        overflow: hidden;
+        position: relative;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .textMsg {
+        font-size: .6em;
+        padding-bottom: 1em;
+        margin-right: 3em; 
+        z-index: 0;
+        overflow: hidden;
+        position: relative;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .statusMsg::before {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        position: absolute;
+        background-color: var(--primary-color);
+        color: var(--white);
+        z-index: -1;
+        right: 1800px;
+        transition: all 1s;
+        content: '';
+    }
+
+    .textMsg::before {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        color: var(--white);
+        z-index: -1;
+        right: 1800px;
+        transition: all .5s;
+        content: '';
+    }
+
+    .statusMsg:hover::before  {
+        right: 0px;
+        background-color: var(--primary-color);
+        color: var(--white);
+        right: 0;
+    }
+
+    .statusMsg:hover > .allStatusMsg > *    {
+        color: var(--white);
+        transition: 1.5s ease;
+    }
+
+    .textMsg:hover::before  {
+        right: 0px;
+        color: var(--white);  
+        right: 0;   
+    }
+}

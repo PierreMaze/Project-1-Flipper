@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/main_content.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="../src/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/hamburger_overwrite.css">
+    <title>Flipper</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <button class="hamburger hamburger--collapse" type="button" id="humbergermenu">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <div class ="menu" id="overlay">
+                <ul class="navbar__links">
+                    <li class="navbar__item"><a href="../pages/feed.html">Home</a></li>
+                    <li class="navbar__bar"></li>
+                    <li class="navbar__item"><a href="#">Settings</a></li>
+                    <li class="navbar__bar"></li>
+                    <li class="navbar__item"><a href="../pages/profilpage.html">Profil</a></li>
+                    <li class="navbar__bar"></li>
+                    <li class="navbar__item"><a href="../pages/privatemessage.html">Messages</a></li>
+                </ul>
+            </div>
+            <div class="navbar__logo"><img src="../src/img/assets/logo.v2.webp" alt="Logo Flipper"></div>
+            <div class="navbar__profil">
+                    <span class="profil__img"><img src="../src/img/assets/profilpic.jpg" alt="Picture profil"></span>
+                    <span class="profil__badge"></span>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="side__menu">
+            <div class="sidebar__logo"><img src="../src/img/assets/logo.v2.webp" alt="Logo Flipper" ></div>
+            <ul>
+                <li class="sidebar__item">
+                    <a href="../pages/feed.html"><i class="fa-solid fa-house fa-xl"></i>Home</a>
+                </li>
+                <li class="sidebar__item"><a href="#">
+                    <i class="fa-solid fa-bell fa-xl"></i>Notifications</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="../pages/privatemessage.html"><i class="fa-solid fa-envelope fa-xl"></i>Messages</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="../pages/profilpage.html"><i class="fa-solid fa-user fa-xl"></i>Profil</a>
+                </li>
+            </ul>
+        </div>
+        <div class="main-wrapper">
+        </div>
+        <div class="menu" id="flipper_overlay">
+            <div class="flipper_overlay">
+                <div class="header">
+                    <img src="../src/img/assets/profilpic.jpg" alt="image_profil">
+                    <div class="header_txt">
+                        <h3>@Jone Doe</h3>
+                    </div>
+                </div>
+                    <div class="content">
+                        <textarea name="txt" id="textareaoverlay" cols="30" rows="10" placeholder="Your flip message..."></textarea>
+                    </div>
+                    <div class="bar"></div>
+        
+                    <div class="icon_bouton">
+                        <button class="btn btn-rounded btn-primary" type="button" id="addimgoverlay"><i class="fa-solid fa-image"></i></button>
+
+                        <button type="submit" class="btn btn-primary btn-lg-rounded" id="flipperoverlaysend">Send</button>
+                    </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal_container">
+
+
+                <div class="modal_header">
+
+                    <div class="textimage">
+                        <img src="../src/img/assets/profilpic.jpg" alt="image_profil">
+
+                        <h3 class="header_txt">@Jone Doe</h3>
+                    </div>
+
+                    <button class="btn btn-rounded btn-primary" type="button" id="close_modal"><i
+                            class="fa-solid fa-xmark fa-2xl"></i></button>
+
+                </div>
+                <div class="modal_content">
+
+                    <textarea name="txt" id="textareamodal" cols="30" rows="10" placeholder="Your flip message..."></textarea>
+
+                </div>
+                <div class="modal_footer">
+                    <button class="btn btn-rounded btn-primary" type="button" id="addimgmodal"><i class="fa-solid fa-image"></i></button>
+
+                    <button type="submit" class="btn btn-primary btn-lg-rounded" id="flippermodalsend">Send</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="side__sugest">
+            <div class="side__btn-search">
+                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                <input type="text" name="search_button" id="side_btn_search" placeholder="Search..." onkeyup="searchFunction()">
+            </div>
+            <div class="search-box is-colapsed">
+                <ul class="search-users-list">
+                </ul>
+            </div>
+            <div class="side__tendance">
+                <div class="tendance__title">
+                    <h2>TENDANCES</h2>
+                </div>
+                <div class="tendance__content">
+                    <ul class="tendance-list">
+                        <li><a href="#">#MaxZ</a></li>
+                        <li><a href="#">#howToLearnJs</a></li>
+                        <li><a href="#">#Wild</a></li>
+                        <li><a href="#">#Wilders</a></li>
+                        <li><a href="#">#Javascript</a></li>
+                        <li><a href="#">#CSS</a></li>
+                        <li><a href="#">#ReactJs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="side__suggestions">
+                <div class="tendance__title">
+                    <h2>SUGGESTIONS</h2>
+                </div>
+                <div class="tendance__content">
+                    <ul class="tendance-list">
+                        <li><a href="#">#WildCodeSchool</a></li>
+                        <li><a href="#">#Javascript</a></li>
+                        <li><a href="#">#CSS</a></li>
+                        <li><a href="#">#ReactJs</a></li>
+                        <li><a href="#">#Javascript</a></li>
+                        <li><a href="#">#iLoveCode</a></li>
+                        <li><a href="#">#iAmADev</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flippers__box" id="flippermenudesktop">
+                <img src="../src/img/ico/dolphine_test.svg" alt="icon dolphine"  class="fa-dolphine-message">
+                <span class="flippers__title">FLIPPERS</span>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <footer>
+        <button class="btn-msg" type="button" id="flippermenumobile">
+            <i class="fa-regular fa-comment-dots fa-2xl"></i>
+        </button>
+    </footer>
+
+
+    <!--<script src="../script.js"></script> -->
+    <script src="../script.js"></script>
+    <script src="../js/maincontent.js"></script>
+    <script src="../js/media.js"></script>
+</body>
+</html>

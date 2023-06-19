@@ -1,0 +1,155 @@
+
+/*overlay*/
+
+#flipper_overlay {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  width: 100%; 
+  height: 100%;
+  top: 64px;
+  left: 0;
+  background-color: var(--light);
+  padding-bottom: 64px;
+}
+
+#flipper_overlay.is-active {
+  display: flex;
+}
+
+  .flipper_overlay {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #ECECEC;
+    padding: 27px 0 0 0;
+  }
+
+  .header_txt {
+    padding-left: 3%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .content {
+    display: flex;
+    width: 100%;
+    padding: 8px 20px;
+  }
+  
+  .bar {
+    width: 90%;
+    background-color: var(--primary-color);
+    height: 2px;
+    margin: 0 auto;
+    margin-bottom:  15px;
+  }
+
+  .send {
+    width: 100%;
+  }
+
+  #txtarea {
+    padding: 1em;
+    border-radius: 15px;
+    width: 100%;
+    height: 20em;
+    font-family: var(--primary-font-family);
+  }
+
+  .icon_bouton {
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    align-items: center;
+    margin:0px 8px;
+}
+
+.btn-input-img {
+    width: 56px;
+    height: 56px;
+    border: 2px solid grey;
+    border-radius: 50%;
+    display: block;
+    transition: border 300ms ease;
+    cursor: pointer;
+    text-align: center;
+    margin: 0;
+    background-color: var(--primary-color);
+}
+
+
+.btn-image i {
+  position: relative;
+  bottom:10px;
+  right: 10px;
+  color: var(--light);
+}
+
+#fileinput {
+  display: none;
+}
+
+
+  .divbouton {
+    height: 56px;
+    width: 130px;
+    border-radius: 20px;
+  }
+
+  .submit-btn {
+    color:#ECECEC;
+    background-color: #284B63;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    border-radius: 32px;
+    border-color: var(--primary-color);
+    font-size: 1rem;
+  } 
+
+  .submit-btn:hover {
+    color: var(--primary-color);
+    background-color: var(--light);
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    border-radius: 32px;
+    font-size: 1rem;
+  } 
+
+  .header > img {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+  }
+
+  @media screen and (min-width: 375px) {
+    #txtarea {
+      padding: 1em;
+      border-radius: 15px;
+      width: 100%;
+      height: 30em;
+      font-family: var(--primary-font-family);
+  
+    }
+    .content {
+      display: flex;
+      width: 100%;
+      padding: 1em;
+    }
+  }
+  
+
+    

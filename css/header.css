@@ -1,0 +1,163 @@
+@import "../src/hamburgers-master/dist/hamburgers.css";
+
+
+/* Navbar */
+header {
+    position: fixed;
+    right: 0;
+    top:0;
+
+    width: 100%;
+    height: 64px;
+
+    background-color: var(--primary-color);
+    z-index: 900;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100%;
+    z-index: 900;
+}
+
+ .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    padding: 8px;
+    margin: 0 8px;
+}
+
+.burger__bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 6px;
+    border-radius: 4px;
+    margin: 2px 0;
+    background: var(--white);
+}
+
+/* Navbar */
+
+.navbar__logo {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin: 0 8px;
+}
+
+.navbar__logo img {
+    height: 100%;
+    margin: 0 auto; 
+}
+
+.navbar__profil {
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+
+    height: 100%;
+    width: 64px;
+
+    margin: 0 8px;
+}
+
+.navbar__profil img {
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+}
+
+.navbar__profil .profil__badge {
+    position: absolute;
+    top:8px;
+    right: 50px;
+    width: 20px;
+    height: 20px;
+    background:#AB0000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    font-size: 0.8rem;
+    font-weight: 900;
+  }
+
+  #overlay {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    height: 100%;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--light); /* Black background with opacity */
+    padding-bottom: 64px;
+  }
+
+  #overlay.is-active{
+    display: flex;
+  }
+
+  .navbar__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--primary-color);
+    border-radius: 24px;
+    height: 50%;
+    width: 50%;
+
+    animation: myAnim 0.6s ease-in-out 0s 1 normal none;
+  }
+
+
+  @keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+  .navbar__links li {
+    list-style: none;
+    margin: 4px 8px;
+  }
+
+  .navbar__links li a {
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  .navbar__bar {
+    background-color: var(--white);
+    margin: 8px;
+    height: 2px;
+    width: 80%;
+  }

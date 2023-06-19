@@ -1,0 +1,548 @@
+@media screen and (min-width:800px) and (max-width:1023px){
+  header {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    
+  }
+
+  .main-wrapper {
+    margin-left: 25%;
+    margin-right: 0;
+  }
+
+  .side__menu {
+    align-self: start;
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+    margin-left: 16px;
+
+    height: calc(100% - 32px);
+    min-height: 550px;
+    width: 23%;
+
+    background-image: url("../src/img/assets/Rectangle64.svg");
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar__logo > img {
+    margin: 16px 16px;
+    width: 60%;
+    max-width: 200px;
+  }
+
+  .sidebar__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 8px 16px;
+    margin: 16px 0px;
+    height: 40px;
+  }
+
+  .sidebar__item a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.1rem;
+  }
+
+  .sidebar__item:hover {
+    border-radius: 24px;
+    background: rgba(255, 255, 255,0.1);
+
+    transition: background-color 0.8s
+  }
+
+
+  .sidebar__item a > i {
+    margin-right: 16px;
+  }
+
+ 
+  .side__sugest {
+    flex-grow: 1;
+    flex-basis: 300px;
+    align-self: start;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    height: 100%;
+    width: 20%;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 8px 16px;
+  }
+
+  .side__btn-search {
+    display: none;
+  }
+  
+  
+   
+  .side__btn-search > input:focus {
+    border: solid 2px var(--white);
+    color: var(--white);
+  }
+
+  .search-box.is-colapsed {
+    display: none;
+  }
+
+  .search-box {
+    position: absolute;
+    top:80px;
+    width: 70%;
+    border-radius: 16px;
+    background-color: var(--white);
+  }
+  .search-users-list,
+  .tendance-list {
+    list-style: none;
+  }
+
+  .search-users-list li:first-child a {
+    border-top: none; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    padding: 8px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 1rem;
+    color: black;
+    display: flex; /* Make it into a block element to fill the whole list */
+    align-items: center;
+  }
+
+  .search-users-list li a {
+    border-top: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    padding: 8px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 1rem;
+    color: black;
+    display: flex; /* Make it into a block element to fill the whole list */
+    align-items: center;
+  }
+
+  .search-users-list li a:hover:not(.header) {
+    background-color: var(--light); /* Add a hover effect to all links, except for headers */
+  }
+
+  .search-users-list li:last-child a:hover:not(.header) {
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    background-color: var(--light); /* Add a hover effect to all links, except for headers */
+  }
+
+  .search-users-list li:first-child a:hover:not(.header) {
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    background-color: var(--light); /* Add a hover effect to all links, except for headers */
+  }
+
+  .profil-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  
+  .side__tendance, 
+  .side__suggestions {
+    display: none;
+  }
+
+  
+  .flippers__box {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  
+    margin: 16px 8px 0 16px;
+    padding: 8px 16px;
+  
+    background-color: var(--secondary-color);
+    border-radius: 16px 16px 0 0;
+  
+    height: 50px;
+    width: 20%;
+  
+    display:flex;
+    align-items: center;
+    justify-content:center;
+  }
+  
+  .flippers__title {
+    color: var(--white);
+    font-size: 1.2rem;
+  }
+  
+  .flippers__box:hover {
+    border: solid 1px var(--white);
+    border-bottom: none;
+  }
+  
+  .flippers__box > * {
+    margin: 0 8px;
+  }
+  
+  .fa-dolphine-message {
+    height: 23px;
+    width: 23px;
+  }
+
+}
+
+@media screen and (min-width:1024px) {
+    header {
+      display: none;
+    }
+  
+    footer {
+      display: none;
+    }
+  
+    .container {
+      display: flex;
+      
+    }
+  
+    .main-wrapper {
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+  
+    .side__menu {
+      align-self: start;
+      position: fixed;
+      top: 0;
+      margin-top: 16px;
+      margin-left: 16px;
+  
+      height: calc(100% - 32px);
+      min-height: 550px;
+      width: 18%;
+  
+      background-image: url("../src/img/assets/Rectangle64.svg");
+      background-position: top;
+      background-size: contain;
+      background-repeat: no-repeat;
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sidebar__logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sidebar__logo > img {
+      margin: 16px 16px;
+      width: 60%;
+      max-width: 240px;
+    }
+  
+    .sidebar__item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+  
+      padding: 8px 16px;
+      margin: 16px 0px;
+      height: 40px;
+    }
+  
+    .sidebar__item a {
+      text-decoration: none;
+      color: var(--white);
+      font-size: 1.1rem;
+    }
+  
+    .sidebar__item:hover {
+      border-radius: 24px;
+      background: rgba(255, 255, 255,0.1);
+  
+      transition: background-color 0.8s
+    }
+  
+  
+    .sidebar__item a > i {
+      margin-right: 16px;
+    }
+  
+    .side__sugest {
+      flex-grow: 1;
+      flex-basis: 300px;
+      align-self: start;
+      position: fixed;
+      top: 0;
+      right: 0;
+  
+      height: 100%;
+      width: 20%;
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      padding: 8px 16px;
+    }
+
+    .side__btn-search {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 56px;
+      margin: 16px 0 8px 0;
+    }
+    
+    .side__btn-search > i {
+      position:relative;
+      top:0px;
+      left:24px;
+      z-index: 500;
+      color: var(--white);
+    }
+    
+    .side__btn-search > input {
+      position:relative;
+      right: 12px;
+      z-index: 0;
+      padding: 8px 0 8px 44px;
+      height: 48px;
+      border-radius: 24px;
+      border: none;
+      font-size: 1em;
+      width: 80%;
+      background: var(--primary-color);
+      color: var(--white);
+    }
+    
+     
+    .side__btn-search > input:focus {
+      border: solid 2px var(--white);
+      color: var(--white);
+    }
+  
+    .search-box.is-colapsed {
+      display: none;
+    }
+  
+    .search-box {
+      position: absolute;
+      top:80px;
+      width: 70%;
+      border-radius: 16px;
+      background-color: var(--white);
+    }
+    .search-users-list,
+    .tendance-list {
+      list-style: none;
+    }
+  
+    .search-users-list li:first-child a {
+      border-top: none; /* Add a border to all links */
+      margin-top: -1px; /* Prevent double borders */
+      padding: 8px; /* Add some padding */
+      text-decoration: none; /* Remove default text underline */
+      font-size: 1rem;
+      color: black;
+      display: flex; /* Make it into a block element to fill the whole list */
+      align-items: center;
+    }
+  
+    .search-users-list li a {
+      border-top: 1px solid #ddd; /* Add a border to all links */
+      margin-top: -1px; /* Prevent double borders */
+      padding: 8px; /* Add some padding */
+      text-decoration: none; /* Remove default text underline */
+      font-size: 1rem;
+      color: black;
+      display: flex; /* Make it into a block element to fill the whole list */
+      align-items: center;
+    }
+  
+    .search-users-list li a:hover:not(.header) {
+      background-color: var(--light); /* Add a hover effect to all links, except for headers */
+    }
+  
+    .search-users-list li:last-child a:hover:not(.header) {
+      border-bottom-right-radius: 16px;
+      border-bottom-left-radius: 16px;
+      background-color: var(--light); /* Add a hover effect to all links, except for headers */
+    }
+  
+    .search-users-list li:first-child a:hover:not(.header) {
+      border-top-right-radius: 16px;
+      border-top-left-radius: 16px;
+      background-color: var(--light); /* Add a hover effect to all links, except for headers */
+    }
+  
+    .profil-picture {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 16px;
+    }
+    
+    .side__tendance, 
+    .side__suggestions {
+      display: flex;
+      flex-direction: column;
+    
+      width: 80%;
+      height: 300px;
+    
+      border-radius: 16px;
+      background: var(--primary-color);
+    
+      margin: 8px 0 8px 0;
+  
+    }
+  
+    .tendance__content::-webkit-scrollbar {
+      width: 12px;               /* width of the entire scrollbar */
+    }
+    
+    .tendance__content::-webkit-scrollbar-track {
+      background: transparent;        /* color of the tracking area */
+      margin: 16px;
+    }
+    
+    .tendance__content::-webkit-scrollbar-thumb {
+      background-color: var(--light);    /* color of the scroll thumb */
+      border-radius: 20px;       /* roundness of the scroll thumb */
+      border: 3px solid var(--primary-color);  /* creates padding around scroll thumb */
+      margin: 16px;
+    }
+  
+    
+    .tendance__title {
+      padding: 8px 0 8px 0px;
+    }
+    
+    .tendance__title h2 {
+      color: var(--white);
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    
+    .tendance__content {
+      padding: 16px;
+      overflow-y: scroll;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .tendance-list li a {
+      border-top: 1px solid #ddd; /* Add a border to all links */
+      margin-top: -1px; /* Prevent double borders */
+      padding: 8px; /* Add some padding */
+      text-decoration: none; /* Remove default text underline */
+      font-size: 1rem;
+      color: var(--white);
+      display: flex; /* Make it into a block element to fill the whole list */
+      align-items: center;
+    }
+  
+    .tendance-list li a:hover {
+      color: #d0d0d0;
+    }
+  
+    .tendance-list li:first-child a {
+      border-top: none; /* Add a border to all links */
+    }
+    
+    .tendance__block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 8px 0;
+      padding: 8px;
+      width: 100%;
+      height: 100px;
+      border-top: solid 1px var(--white);
+    }
+    
+    
+    .tendance__bar {
+      height: 1px;
+      width: 100%;
+      margin: 8px 0 0 0;
+      background-color: var(--white);
+    }
+    
+    .flippers__box {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+    
+      margin: 16px 8px 0 16px;
+      padding: 8px 16px;
+    
+      background-color: var(--secondary-color);
+      border-radius: 16px 16px 0 0;
+    
+      height: 50px;
+      width: 20%;
+    
+      display:flex;
+      align-items: center;
+      justify-content:center;
+    }
+    
+    .flippers__title {
+      color: var(--white);
+      font-size: 1.2rem;
+    }
+    
+    .flippers__box:hover {
+      border: solid 1px var(--white);
+      border-bottom: none;
+    }
+    
+    .flippers__box > * {
+      margin: 0 8px;
+    }
+    
+    .fa-dolphine-message {
+      height: 23px;
+      width: 23px;
+    }
+  }
+  
+  .profil-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  

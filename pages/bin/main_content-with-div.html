@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/main_content.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="../src/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/hamburger_overwrite.css">
+    <title>Flipper</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation">
+            <button class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <div class ="menu" id="overlay">
+                <ul class="navbar__links">
+                    <li class="navbar__item"><a href="../index.html">Home</a></li>
+                    <span class="navbar__bar"></span>
+                    <li class="navbar__item"><a href="#">Settings</a></li>
+                    <span class="navbar__bar"></span>
+                    <li class="navbar__item"><a href="#">Profil</a></li>
+                    <span class="navbar__bar"></span>
+                    <li class="navbar__item"><a href="#">Politiques</a></li>
+                </ul>
+            </div>
+            <div class="navbar__logo"><img src="../src/img/assets/logo.v2.webp" alt="" srcset=""></div>
+            <div class="navbar__profil">
+                    <span class="profil__img"><img src="../src/img/assets/profilpic.jpg" alt="Picture profil"></span>
+                    <span class="profil__badge"></span>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="side__menu">
+            <div class="sidebar__logo"><img src="../src/img/assets/logo.v2.webp" alt="" srcset=""></div>
+            <ul>
+                <li class="sidebar__item">
+                    <a href="../index.html"><i class="fa-solid fa-house fa-xl"></i>Home</a>
+                </li>
+                <li class="sidebar__item"><a href="#">
+                    <i class="fa-solid fa-bell fa-xl"></i>Notifications</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#"><i class="fa-solid fa-envelope fa-xl"></i>Messages</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#"><i class="fa-solid fa-user fa-xl"></i>Profil</a>
+                </li>
+            </ul>
+        </div>
+        <div class="main-wrapper">
+            <div class="card">
+                <div class="card__front">
+                    <div class="card__header">
+                        <div class="card__user_image">
+                            <a href="../index.html" target="_blank" rel="noopener">
+                                <img src="../src/img/assets/profilpic.jpg" alt="Picture profil">
+                            </a>
+                        </div>
+                        <div class="card__user">
+                            <h2 class="card__user_name">John Doe</h2>
+                            <h3 class="card__user_hash">@john_doe</h3>
+                        </div>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__content_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, quos. Tempore dignissimos explicabo vel, laboriosam tenetur tempora dolor blanditiis doloremque deleniti consequatur in earum vitae omnis, impedit veritatis molestiae modi.</div>
+                        <div class="card__content_image"><img src="../src/img/assets/profilpic.jpg" alt="Picture profil"></div>
+                        <div class="card__date_time">10:05 AM - Dec 19, 2023</div>
+                    </div>
+                    <div class="card__bar"></div>
+                    <div class="card__actions">
+                        <div class="actions__likes">
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                            <p class="number_likes">10</p>
+                        </div>
+                        <div class="actions__downvotes">
+                            <i class="fa-regular fa-thumbs-down fa-lg"></i>
+                            <p class="number_downvotes">50</p>
+                        </div>
+                        <div class="actions__messages">
+                            <i class="fa-regular fa-message fa-lg"></i>
+                            <p class="number_message">7</p>
+                        </div>
+                        <div class="actions__reply">
+                            <img src="../src/img/ico/download.svg" alt="" srcset="" class="fa-dolphine">
+                            <p class="number_reply">80</p>
+                        </div>
+                    </div>
+                    <div class="card__comments">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="comments_collapse">See more comments...</a>
+                        <div class="comments_list">
+                            <div class="comments">
+                                <div class="comments_text is-colapsed">
+                                    <img src="../src/img/assets/profilpic.jpg" alt="" class="profil-picture">
+                                    <div class="comment_user">
+                                        <h3 class="user_comment_name">Theo Rodriguez</h3>
+                                        <p class="user_comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quis ipsa officiis facere dolore totam, porro ducimus accusamus animi vero. Odit unde neque rem autem cumque, ex rat</p>
+                                    </div>
+                                </div>
+                                <div class="comments_text">
+                                    <img src="../src/img/assets/profilpic.jpg" alt="" class="profil-picture">
+                                    <div class="comment_user">
+                                        <h3 class="user_comment_name">Theo Rodriguez</h3>
+                                        <p class="user_comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quis ipsa officiis facere dolore totam, porro ducimus accusamus animi vero. Odit unde neque rem autem cumque, ex rat</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__bar"></div>
+                        <div class="input_comment">
+                            <img src="../src/img/assets/profilpic.jpg" alt="" class="profil-picture">
+                            <textarea class ="textarea_comment" name="" id="" cols="20"></textarea>
+                            <button class="btn btn-rounded btn-primary"><i class="fa-regular fa-paper-plane"></i></button>
+                        </div>        
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__front">
+                    <div class="card__header">
+                        <div class="card__user_image"><img src="../src/img/assets/profilpic.jpg" alt="Picture profil"></div>
+                        <div class="card__user">
+                            <h2 class="card__user_name">John Doe</h2>
+                            <h3 class="card__user_hash">@john_doe</h3>
+                        </div>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__content_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, quos. Tempore dignissimos explicabo vel, laboriosam tenetur tempora dolor blanditiis doloremque deleniti consequatur in earum vitae omnis, impedit veritatis molestiae modi.</div>
+                        <div class="card__date_time">10:05 AM - Dec 19, 2023</div>
+                    </div>
+                    <div class="card__bar"></div>
+                    <div class="card__actions">
+                        <div class="actions__likes">
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                            <p class="number_likes">10</p>
+                        </div>
+                        <div class="actions__downvotes">
+                            <i class="fa-regular fa-thumbs-down fa-lg"></i>
+                            <p class="number_downvotes">50</p>
+                        </div>
+                        <div class="actions__messages">
+                            <i class="fa-regular fa-message fa-lg"></i>
+                            <p class="number_likes">7</p>
+                        </div>
+                        <div class="actions__reply">
+                            
+                            <img src="../src/img/ico/download.svg" alt="" srcset="" class="fa-dolphine">
+                            <p class="number_reply">80</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side__sugest">
+            <div class="side__btn-search">
+                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                <input type="text" name="" id="side_btn_search" placeholder="Search..." onkeyup="searchFunction()">
+            </div>
+            <div class="search-box is-colapsed">
+                <ul class="search-users-list"></ul>
+            </div>
+            <div class="side__tendance">
+                <div class="tendance__title">
+                    <h2>TENDANCES</h2>
+                </div>
+                <div class="tendance__content">
+                    <ul class="tendance-list">
+                        <li><a href="#">#Wild</a></li>
+                        <li><a href="#">#Wilders</a></li>
+                        <li><a href="#">#Javascript</a></li>
+                        <li><a href="#">#CSS</a></li>
+                        <li><a href="#">#ReactJs</a></li>
+                        <li><a href="#">#Javascript</a></li>
+                        <li><a href="#">#CSS</a></li>
+                        <li><a href="#">#ReactJs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="side__suggestions">
+                <div class="tendance__title">
+                    <h2>SUGGESTIONS</h2>
+                </div>
+                <div class="tendance__content">
+                    <ul class="tendance-list">
+                        <li><a href="#">#WildCodeSchool</a></li>
+                        <li><a href="#">#Javascript</a></li>
+                        <li><a href="#">#CSS</a></li>
+                        <li><a href="#">#ReactJs</a></li>
+                        <li><a href="#">#Javascript</a></li>
+                        <li><a href="#">#iLoveCode</a></li>
+                        <li><a href="#">#iAmADev</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flippers__box">
+                <img src="../src/img/ico/dolphine_test.svg" alt="" srcset="" class="fa-dolphine-message">
+                <span class="flippers__title">FLIPPERS</span>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <footer>
+        <button class="btn-msg" type="button" id="flipper-btn-smart">
+            <i class="fa-regular fa-comment-dots fa-2xl"></i>
+        </button>
+    </footer>
+
+
+    <script src="../script.js"></script>
+    <script src="../js/maincontent.js"></script>
+    <script src="../js/media.js"></script>
+</body>
+</html>

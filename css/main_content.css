@@ -1,0 +1,237 @@
+@import "../style.css";
+
+/* Card */
+
+.card {
+  width: 100%;
+  height: 100%;
+
+  padding: 16px;
+
+  
+}
+
+/* Card : Front */
+
+.card__front {
+  width: 100%;
+  height: 100%;
+  border-radius:16px;
+  background: var(--white);
+  box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.30);
+}
+
+.card__back.is-masked {
+  display: none;
+}
+
+.card__front.is-masked {
+  visibility: hidden;
+}
+
+.card__back {
+  height: 100%;
+}
+
+/* Card : Content text and image */
+
+.card__header {
+  display: flex;
+  padding: 10px;
+}
+
+.card__user_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__user_image img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.card__user {
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px;
+}
+
+.card__user_name {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.card__user_hash {
+  display: block;
+  font-size: 0.8rem;
+}
+
+/* Card : Content text and image */
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  padding:0px 16px;
+}
+
+
+.card__content_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__content_image img {
+  width: 80%;
+  height: auto;
+  border-radius: 16px;
+}
+
+/* Card : Date and time */
+
+.card__date_time {
+  margin: 8px 0 0 0;
+  color: var(--grey80);
+}
+
+/* Card : Bar */
+
+.card__bar {
+  height: 1px;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0px 1px 1px 0px var(--grey80);
+}
+
+/* Card : Actions */
+
+.card__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 46px;
+  width: 50%;
+  margin: 0 8px;
+}
+
+.actions__likes, .actions__downvotes, 
+.actions__messages, .actions__reply  {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  margin: 8px 8px;
+}
+
+.actions__likes > *, .actions__downvotes > *, 
+.actions__messages > *, .actions__reply > *  {
+  margin: 0px 4px;
+}
+
+.fa-dolphine {
+  height: 23px;
+  width: 23px;
+  filter: invert(56%) sepia(2%) saturate(6%) hue-rotate(345deg) brightness(28%) contrast(89%);
+  z-index: 1;
+}
+
+.fa-message, .fa-thumbs-down, .fa-heart {
+  filter: invert(56%) sepia(2%) saturate(6%) hue-rotate(345deg) brightness(28%) contrast(89%);
+  z-index: 1;
+}
+
+.fa-message.is-active, .fa-thumbs-down.is-active, .fa-dolphine.is-active {
+  filter: brightness(100%) saturate(100%) invert(81%) sepia(28%) saturate(6186%) hue-rotate(176deg) 
+  contrast(92%) drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
+}
+
+.fa-heart.is-active {
+  color: var(--active-color-like);
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
+}
+
+.fa-message:hover, .fa-thumbs-down:hover, .fa-dolphine:hover {
+  filter: brightness(80%) saturate(100%) invert(81%) sepia(28%) saturate(6186%) hue-rotate(176deg) 
+  contrast(92%) drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
+}
+
+.fa-heart:hover {
+  color: var(--active-color-like);
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
+}
+
+
+.card__comments {
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 16px;
+}
+
+.comments_text,
+.input_comment {
+  display: flex; 
+  margin: 8px;
+}
+
+.comments_text img {
+  margin-top: 8px;
+}
+
+.comment_user {
+  background-color: var(--light);
+  padding: 8px;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+.comment_user h3 {
+  font-size: 0.8rem;
+}
+
+.input_comment textarea {
+  width: 100%;
+  resize: none;
+  border-radius: 16px;
+  padding: 16px;
+  font-family: var(--primary-font-family);
+}
+
+.card__comments.is-colapsed, 
+.comments_text.is-colapsed,
+.comments_collapse.is-colapsed
+{
+  display: none;
+}
+
+.comments_collapse {
+  cursor: pointer;
+  color: var(--white);
+  background: var(--primary-color);
+  padding: 8px 16px;
+  border-radius: 16px;
+  width:250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px var(--light);
+}
+
+.comments_collapse:hover{
+  background-color: var(--light);
+  color: var(--black);
+  border: solid 1px var(--darken);
+}
+
+
